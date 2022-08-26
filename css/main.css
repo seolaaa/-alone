@@ -1,0 +1,83 @@
+/*메인시작*/
+#visual-wrap{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#visual-wrap img{
+    width: 100%;
+}
+#visual-body{
+    width: 1400px;
+    height: 100%; 
+}
+
+#visual-text-wrap{
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 16%;
+
+}
+#visual-title{
+    font: normal 42px/51px 'Noto Sans';
+    color: white;
+}
+#visual-title>span{
+    font: bold 42px/51px 'Noto Sans';
+}
+#visual-text{
+    margin-top: 30px;
+    font: normal 20px/24px 'Noto Sans';
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+
+    #visual-body{
+        width: 100%;
+    }
+    #visual-text-wrap{
+        top: 20%;
+    }
+    #visual-title,#visual-title>span{
+        font-size:38px;
+    }
+    #visual-text{
+        font-size:16px
+    }
+}
+
+
+@media screen and (max-width:850px){
+    #visual-text-wrap{
+        top: 15%;
+    }
+    #visual-title,#visual-title>span{
+        font-size:30px;
+    }
+    #visual-text{
+        font-size:12px
+    }
+}
+
