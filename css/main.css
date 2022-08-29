@@ -145,6 +145,7 @@ body{
     width: 100%;
     height: auto;
     background: url(/images/메인3.png);
+    background-size: cover;
 }
 #stacore-body{
     width: 1400px;
@@ -174,6 +175,9 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#movie img{
+    width: 100%;
 }
 #stacore-down{
     width: 100%;
@@ -212,18 +216,21 @@ span{
     top: 0px;
     border: solid 1px white;
 }
+#projects-list li img{
+    width: 100%;
+}
 .pro-text-wrap{
     position: absolute;
     bottom: 30px;
     left: 20px;
 }
 .pro-text{
-    font: bold 20px/24px 'Noto Sans';
+    font: bold 1.25em 'Noto Sans';
     color: white;
 }
 .pro-date{
     margin-top: 10px;
-    font: normal 14px/17px 'Noto Sans';
+    font: normal 1.14em 'Noto Sans';
     color: white;
 }
 
@@ -238,20 +245,17 @@ span{
 
 
 
-
-
-
-
-
-
+@media screen and (max-width:1400px){
+    #visual-body,#business-body,#stacore-body{
+        width: 100%;
+    }
+}
 
 
 
 @media screen and (max-width:1200px){
 
-    #visual-body{
-        width: 100%;
-    }
+   
     #visual-text-wrap{
         top: 35%;
     }
@@ -266,13 +270,19 @@ span{
     #visual-text{
         font-size:16px
     }
-
-    #business-body{
-        width: 100%;
-    }
     #business-icon-wrap{
         transform: scale(0.7);
     }
+    .stacore-title-wrap::after{
+        width: 60%;
+    }
+    #projects-list li{
+        margin-left: 10px;
+    }
+    #projects-list li:last-child{
+        margin-right: 10px;
+    }
+  
    
 }
 
@@ -299,7 +309,19 @@ span{
     #business-text-wrap{
     padding-top: 300px;
     box-sizing: border-box;
-}
+    }
+    .stacore-title-wrap::after{
+        width:45%;
+    }
+     #projects-wrap{
+        transform: scale(0.9);
+    }
+    .pro-text{
+        font-size: 16px;
+    }
+    .pro-date{
+        font-size: 12px;
+    }
 
 }
 
