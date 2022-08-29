@@ -143,19 +143,17 @@ body{
 
 #stacore-bg{
     width: 100%;
-    height: 1911px;
+    height: auto;
     background: url(/images/메인3.png);
 }
 #stacore-body{
     width: 1400px;
     height:100%;
     margin: 0px auto;
-    background: rgb(28, 28, 39);
 }
 #stcore-up{
     width: 100%;
     height: 1180px;
-    background: red;
 }
 #stacore-title{
     width: 100%;
@@ -198,7 +196,35 @@ span{
 }
 #projects-wrap{
     width: 100%;
-    background: maroon;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projects-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#projects-list li{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: solid 1px white;
+}
+.pro-text-wrap{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.pro-text{
+    font: bold 20px/24px 'Noto Sans';
+    color: white;
+}
+.pro-date{
+    margin-top: 10px;
+    font: normal 14px/17px 'Noto Sans';
+    color: white;
 }
 
 
