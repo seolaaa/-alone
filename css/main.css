@@ -35,6 +35,7 @@ body{
     top: 40%;
     left: 16%;
     transition: all 0.5s ease-out;
+    opacity: 1;
 
 }
 .visual-title{
@@ -48,6 +49,13 @@ body{
     margin-top: 30px;
     font: normal 20px/24px 'Noto Sans';
     color: white;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+.visual-title>span{
+    opacity: 0;
+    transition: all 0.5s ease-out;
+
 }
 #visual-btn{
     width: 180px;
