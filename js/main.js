@@ -10,10 +10,15 @@ window.addEventListener('load',()=>{
 
   
 
+initEvent();
 
+function initEvent(){
+    setInterval(TextAni);
+}
+setInterval(TextAni);
     
         
-    setInterval(TextAni);
+    
      
        
    
