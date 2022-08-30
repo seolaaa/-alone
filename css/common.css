@@ -29,13 +29,12 @@ ul#skipmenu-list li a:focus {
 #header-wrap{
     width: 100%;
     height: 100px;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: 1;
-    
-    
+    transition: all 0.3s ease-out;
 }
 header{
     width: 1480px;
@@ -61,6 +60,12 @@ header{
 }
 #title a,#menu-list a{
     color: rgb(255, 255, 255);
+}
+#menu-list li{
+    transition: all 0.3s ease-out;
+}
+#menu-list li:hover{
+    transform: scaleX(1.2);
 }
 /*헤더끝*/
 
