@@ -25,25 +25,26 @@ body{
     height: 100%;
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/smoke-min.png') center center no-repeat;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.2;
     animation: smokebg 60s infinite alternate;
 }
 
-#visual-text-wrap{
+.visual-text-wrap{
     width: auto;
     position: absolute;
     top: 40%;
     left: 16%;
+    transition: all 0.5s ease-out;
 
 }
-#visual-title{
+.visual-title{
     font: normal 42px/51px 'Noto Sans';
     color: white;
 }
-#visual-title>span{
+.st{
     font: bold 42px/51px 'Noto Sans';
 }
-#visual-text{
+.visual-text{
     margin-top: 30px;
     font: normal 20px/24px 'Noto Sans';
     color: white;
@@ -180,7 +181,7 @@ body{
     font: normal 42px/51px 'Noto Sans';
     color: white;
 }
-span{
+.Big-text>span{
     font: bold 42px/51px 'Noto Sans';
     color: white; 
 }
