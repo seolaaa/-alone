@@ -3,9 +3,11 @@ window.addEventListener('load',()=>{
     const textWrap = document.querySelectorAll('.visual-text-wrap')
     const titleSpan = document.querySelectorAll('.visual-title>span')
     const text = document.querySelectorAll('.visual-text')
+    const arrow = document.querySelectorAll('.arrow')
    
 
     TextAni();
+    setInterval(arrowAni,2000);
 
 
     function TextAni(){
@@ -34,6 +36,16 @@ window.addEventListener('load',()=>{
             gsap.set(titleSpan[3],{opacity:0,scaleY:1.5})
             gsap.set(text[1],{opacity:0,scaleY:1.5})
             TextAni();
+        }})
+    }
+
+    function arrowAni(){
+        gsap.to(arrow[0],{opacity:1,delay:0.1})
+        gsap.to(arrow[1],{opacity:1,delay:0.3})
+        gsap.to(arrow[2],{opacity:1,delay:0.5,onComplete:()=>{
+            gsap.to(arrow[0],{opacity:0,delay:0.1})
+            gsap.to(arrow[1],{opacity:0,delay:0.3})
+            gsap.to(arrow[2],{opacity:0,delay:0.5})
         }})
     }
         
