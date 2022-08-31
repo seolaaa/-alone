@@ -44,15 +44,19 @@ body{
 } */
 .st{
     font: bold 42px/51px 'Noto Sans';
-    color: white;
     transform: scaleY(1.5);
     opacity: 0;
+    display: inline-block;
 }
 .normal{
-    font: normal 42px/51px 'Noto Sans';
-    color: white;
     transform: scaleY(1.5);
     opacity: 0;
+    display: inline-block;
+}
+.visual-title{
+    font: normal 42px/51px 'Noto Sans';
+    color: white;
+    opacity: 1;
 }
 .visual-text{
     margin-top: 30px;
