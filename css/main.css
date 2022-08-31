@@ -32,7 +32,7 @@ body{
 
 
     opacity: 1;
-    animation: smokebg 55s infinite alternate;
+    animation: smokebg 35s infinite alternate;
 }
 
 .visual-text-wrap{
@@ -198,14 +198,44 @@ body{
 .icon{
     width: 340px;
     height: 340px;
-    border:solid 1px #0485d7;
+    border:solid 0px #0485d7;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.7);
+    transform: scale(0);
+    position: relative;
+    overflow: hidden;
 }
+.icon::before{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #399953;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#0485d7, #0485d7), linear-gradient(#ffffff, #ffffff), linear-gradient(#0485d7,#0485d7);
+    -webkit-animation: rotate 4s linear infinite;
+    border-radius: 50%;
+  }
+  .icon::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: rgba(0,0,0,1);
+    border-radius: 50%;
+  }
 .icon-title{
     font: bold 20px/24px 'Noto Sans';
     color: white;
@@ -413,6 +443,12 @@ body{
       transform: translate3d(0, 0, 100px) rotate(0.01deg)
     }
 }
+
+@keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
 
 
 
