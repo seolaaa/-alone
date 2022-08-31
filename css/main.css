@@ -209,23 +209,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.icon::before{
-    content: '';
-    position: absolute;
-    z-index: -2;
-    left: -50%;
-    top: -50%;
-    width: 200%;
-    height: 200%;
-    background-color: #399953;
-    background-repeat: no-repeat;
-    background-size: 50% 50%, 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#0485d7, #0485d7), linear-gradient(#ffffff, #ffffff), linear-gradient(#0485d7,#0485d7);
-    -webkit-animation: rotate 4s linear infinite;
-    border-radius: 50%;
-  }
-  .icon::after{
+  .icon::before{
     content: '';
     position: absolute;
     z-index: -1;
@@ -233,8 +217,20 @@ body{
     top: 6px;
     width: calc(100% - 12px);
     height: calc(100% - 12px);
-    background: rgba(0,0,0,1);
+    background: rgb(2, 2, 3);
     border-radius: 50%;
+  }
+
+  .icon::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 50%;
+    z-index: -4;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
   }
 .icon-title{
     font: bold 20px/24px 'Noto Sans';
@@ -444,11 +440,26 @@ body{
     }
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     100% {
       transform: rotate(1turn);
     }
+  } */
+
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
+  
+
+
 
 
 
