@@ -21,11 +21,17 @@ body{
     top: 0px;
     left: -10%;
     transform: translate3d(0, 0, 0) rotate(0.01deg);
-    width: 110%;
+    width: 200%;
     height: 100%;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/smoke-min.png') center center no-repeat;
+
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/smoke-min.png') center center no-repeat;
+    background-size: cover; */
+
+    background: url(/images/smoke.png) center center no-repeat;
     background-size: cover;
-    opacity: 0.2;
+
+
+    opacity: 1;
     animation: smokebg 55s infinite alternate;
 }
 
@@ -240,7 +246,7 @@ body{
 .stacore-title-wrap::after{
     content: "";
     display: block;
-    width: 70%;
+    width: 72%;
     height: 1px;
     background: rgb(255, 255, 255);
     position: absolute;
