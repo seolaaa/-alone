@@ -38,12 +38,21 @@ body{
     opacity: 1;
 
 }
-.visual-title{
+/* .visual-title{
     font: normal 42px/51px 'Noto Sans';
     color: white;
-}
+} */
 .st{
     font: bold 42px/51px 'Noto Sans';
+    color: white;
+    transform: scaleY(1.5);
+    opacity: 0;
+}
+.normal{
+    font: normal 42px/51px 'Noto Sans';
+    color: white;
+    transform: scaleY(1.5);
+    opacity: 0;
 }
 .visual-text{
     margin-top: 30px;
@@ -51,12 +60,10 @@ body{
     color: white;
     transition: all 0.5s ease-out;
     opacity: 0;
+    transform: scaleY(1.5);
 }
-.visual-title>span{
-    opacity: 0;
-    transition: all 0.5s ease-out;
 
-}
+
 #visual-btn{
     width: 180px;
     height: 50px;

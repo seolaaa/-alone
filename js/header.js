@@ -14,7 +14,7 @@ window.addEventListener('load',()=>{
        
         if(headerHeight<=100){
             header.style.position = 'fixed'
-            header.style.background = 'rgba(0, 0, 0, 0.7)'
+            // header.style.background = 'rgba(0, 0, 0, 0.7)'
         }
     }
 })
