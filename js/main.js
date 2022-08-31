@@ -5,23 +5,10 @@ window.addEventListener('load',()=>{
     const text = document.querySelectorAll('.visual-text')
    
 
-  
-
-    let timer=null;
-
-    // console.log(titleIn.length)
-  
-
-  
-
-
-    let animation = true;
-
     TextAni();
 
 
     function TextAni(){
-        console.log(1);
         gsap.set(textWrap[0], {opacity:1});
         gsap.to(titleSpan[0],{opacity:1,scaleY:1,duration:0.5,ease:'power1.out',delay:0.3})
         gsap.to(titleSpan[1],{opacity:1,scaleY:1,duration:0.5,ease:'power1.out',delay:0.7})
@@ -38,7 +25,6 @@ window.addEventListener('load',()=>{
          
     
     function TextAni2(){
-        console.log(2);
         gsap.set(textWrap[1], {opacity:1});
         gsap.to(titleSpan[2],{opacity:1,scaleY:1,duration:0.5,ease:'power1.out',delay:0.3})
         gsap.to(titleSpan[3],{opacity:1,scaleY:1,duration:0.5,ease:'power1.out',delay:0.7})
