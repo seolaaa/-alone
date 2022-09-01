@@ -10,12 +10,33 @@ window.addEventListener('load',()=>{
 
 
     initEvent();
+   
 
     function initEvent(){
 
         window.addEventListener('scroll',scrollContent)
         window.addEventListener('scroll',scrollBall)
+        
+
     }
+
+    function random(min, max) { 
+       
+        return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+    }
+
+    function floatingCircle(item, delayAfter, size, xsize) {
+        gsap.to(item,random(1.5, 5.5),{
+                delay: random(0, delayAfter),x: xsize,y: size,repeat: -1,yoyo: true,ease: Power1.easeInOut 
+            }
+        )
+    }
+
+      floatingCircle('.icon1',.5, 10, 14)
+    //   floatingCircle('.c2', 1, 700, 1800)
+    //   floatingCircle('.c3', 1.5, 700, 1800)
+
+      console.log(floatingCircle)
 
     function scrollContent(){
 
@@ -38,31 +59,6 @@ window.addEventListener('load',()=>{
 
         let scrollHeight = window.pageYOffset;
         
-
-        // if(scrollHeight>=1000){
-
-        //     console.log(1);
-        //     gsap.to(icon[0],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.2})
-        //     gsap.to(icon[2],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.3})
-        //     gsap.to(icon[4],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.4})
-        //     gsap.to(icon[5],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.7})
-        //     gsap.to(icon[3],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.8})
-        //     gsap.to(icon[1],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.9})
-           
-        // }
-
-        // if(scrollHeight>=1000){
-
-        //     console.log(1);
-        //     gsap.to(icon[0],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.2})
-        //     gsap.to(icon[2],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.3})
-        //     gsap.to(icon[4],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.4})
-        //     gsap.to(icon[5],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.6})
-        //     gsap.to(icon[3],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.7})
-        //     gsap.to(icon[1],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.8})
-            
-           
-        // }
         if(scrollHeight>=1000){
 
             console.log(1);
@@ -80,6 +76,9 @@ window.addEventListener('load',()=>{
 
         
     }
+
+   
+   
 
 
 })
