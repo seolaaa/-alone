@@ -136,7 +136,7 @@ body{
 
 #business-text-wrap{
     width: 100%;
-    height: 260px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,10 +326,25 @@ body{
     font: bold 42px/51px 'Noto Sans';
     color: white; 
 }
-#movie{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#fish-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    
+}
+#fish1{
+    position: absolute;
+    top: 0px;
+   
+    
+}
+#fish2{
+    position: absolute;
+    top: -50px;
+    
+    
 }
 #movie img{
     width: 100%;
