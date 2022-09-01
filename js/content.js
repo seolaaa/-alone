@@ -32,11 +32,12 @@ window.addEventListener('load',()=>{
         )
     }
 
-      floatingCircle('.icon1',.5, 10, 14)
-    //   floatingCircle('.c2', 1, 700, 1800)
-    //   floatingCircle('.c3', 1.5, 700, 1800)
-
-      console.log(floatingCircle)
+      floatingCircle('.icon1',1, 20, 5,)
+      floatingCircle('.icon2',1, 0, 10)
+      floatingCircle('.icon3',1, 10, 4)
+      floatingCircle('.icon4',1, 10, 20)
+      floatingCircle('.icon5',1, 2, 10)
+      floatingCircle('.icon6',1, 10, 2)
 
     function scrollContent(){
 
