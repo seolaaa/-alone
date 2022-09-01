@@ -235,9 +235,13 @@ body{
   }
 
   .icon:hover::before{
-    background: rgba(2, 2, 3,0.5);
+    /* background: rgba(2, 2, 3,0.5); */
+    background: rgba(0, 0, 0,0.4);
+    color: black;
     
   }
+
+  
 
   .icon::after{
     content: '';
@@ -367,16 +371,17 @@ body{
     top: -200px;
     border: solid 1px white;
     opacity: 0;
-    transition: all 0.2s ease-out;
+    transition: all 0.6s ease-out;
     overflow: hidden;
 }
 #projects-list li img:hover{
-    animation: rotate 10s linear infinite;
-    /* transform-origin: 50% 50%; */
+    animation: rotate 15s linear infinite;
+    
 }
 #projects-list li img{
     width: 100%;
     transform: scale(1.7);
+    transition: all 0.3s ease-out;
 }
 .pro-text-wrap{
     position: absolute;
@@ -514,9 +519,7 @@ body{
    
     100%{
         transform:rotate(180deg)
-}
-
-
+    }
 
   }
 
