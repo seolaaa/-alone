@@ -39,17 +39,43 @@ window.addEventListener('load',()=>{
         let scrollHeight = window.pageYOffset;
         
 
+        // if(scrollHeight>=1000){
+
+        //     console.log(1);
+        //     gsap.to(icon[0],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.2})
+        //     gsap.to(icon[2],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.3})
+        //     gsap.to(icon[4],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.4})
+        //     gsap.to(icon[5],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.7})
+        //     gsap.to(icon[3],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.8})
+        //     gsap.to(icon[1],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.9})
+           
+        // }
+
+        // if(scrollHeight>=1000){
+
+        //     console.log(1);
+        //     gsap.to(icon[0],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.2})
+        //     gsap.to(icon[2],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.3})
+        //     gsap.to(icon[4],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.4})
+        //     gsap.to(icon[5],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.6})
+        //     gsap.to(icon[3],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.7})
+        //     gsap.to(icon[1],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.8})
+            
+           
+        // }
         if(scrollHeight>=1000){
 
             console.log(1);
-            gsap.to(icon[0],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.2})
-            gsap.to(icon[2],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.3})
-            gsap.to(icon[4],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.4})
-            gsap.to(icon[5],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.7})
-            gsap.to(icon[3],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.8})
-            gsap.to(icon[1],{scale:1,opacity:1,duration:0.5,ease:'power1.out',delay:0.9})
+            gsap.to(icon[0],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.2})
+            gsap.to(icon[3],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.3})
+            gsap.to(icon[5],{top:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.4})
+            gsap.to(icon[4],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.6})
+            gsap.to(icon[2],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.7})
+            gsap.to(icon[1],{bottom:0,opacity:1,duration:0.7,ease:'power1.out',delay:0.8})
+            
            
         }
+       
         
 
         
