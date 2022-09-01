@@ -311,11 +311,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#stacore-title p {
-    font: normal 42px/51px 'Noto Sans';
+    font: bold 50px/51px 'Noto Sans';
     color: white;
 }
+/* #stacore-title p {
+    font: normal 42px/51px 'Noto Sans';
+    color: white;
+} */
 .Big-text>span{
     font: bold 42px/51px 'Noto Sans';
     color: white; 

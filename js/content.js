@@ -4,12 +4,20 @@ window.addEventListener('load',()=>{
     const bigText = document.querySelectorAll('.Big-text')
     const smallText = document.querySelectorAll('.explanation-text')
     const icon = document.querySelectorAll('.icon')
+    const stacoreText = document.querySelector('#stacore-title')
 
+
+
+
+    let n = 0;
+    const content = 'THIS IS A STACORE!   '
 
     
 
 
     initEvent();
+    setInterval(typing,100);
+    
    
 
     function initEvent(){
@@ -20,24 +28,6 @@ window.addEventListener('load',()=>{
 
     }
 
-    function random(min, max) { 
-       
-        return parseFloat((Math.random() * (max - min) + min).toFixed(2))
-    }
-
-    function floatingCircle(item, delayAfter, size, xsize) {
-        gsap.to(item,random(1.5, 5.5),{
-                delay: random(0, delayAfter),x: xsize,y: size,repeat: -1,yoyo: true,ease: Power1.easeInOut 
-            }
-        )
-    }
-
-      floatingCircle('.icon1',1, 20, 5,)
-      floatingCircle('.icon2',1, 0, 10)
-      floatingCircle('.icon3',1, 10, 4)
-      floatingCircle('.icon4',1, 10, 20)
-      floatingCircle('.icon5',1, 2, 10)
-      floatingCircle('.icon6',1, 10, 2)
 
     function scrollContent(){
 
@@ -77,6 +67,34 @@ window.addEventListener('load',()=>{
 
         
     }
+
+    function typing(){
+        stacoreText.innerHTML += content[n++]; 
+        if(n > content.length){ 
+            stacoreText.innerHTML = '';
+            n = 0;
+        }
+    }
+
+    function random(min, max) { 
+       
+        return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+    }
+
+    function floatingCircle(item, delayAfter, size, xsize) {
+        gsap.to(item,random(1, 3.5),{
+                delay: random(0, delayAfter),x: xsize,y: size,repeat: -1,yoyo: true,ease: Power2.easeInOut 
+            }
+        )
+    }
+
+      floatingCircle('.icon1',20,10,)
+      floatingCircle('.icon2',30,10)
+      floatingCircle('.icon3',10,20)
+      floatingCircle('.icon4',10,20)
+      floatingCircle('.icon5',30,10)
+      floatingCircle('.icon6',10,10)
+
 
    
    
