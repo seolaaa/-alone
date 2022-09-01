@@ -336,13 +336,15 @@ body{
 }
 #fish1{
     position: absolute;
-    top: 0px;
+    top: 100px;
+    left: 400px;
+    transform: rotate(7deg);
    
     
 }
 #fish2{
     position: absolute;
-    top: -50px;
+    top: 200px;
     
     
 }
