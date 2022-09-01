@@ -336,7 +336,7 @@ body{
 }
 #fish1{
     position: absolute;
-    top: 100px;
+    top: 100px; /*100*/
     left: 500px;
     transform: rotate(7deg);
    
@@ -344,24 +344,24 @@ body{
 }
 #fish2{
     position: absolute;
-    top: 350px;
+    top: 350px; /*350*/
     transform: rotate(-10deg);  
 }
 #fish3{
     position: absolute;
-    top: 550px;
+    top: 550px;/*550*/
     left: 600px;
      
 }
 #fish4{
     position: absolute;
-    top: 0px;
+    top: 0px;/*0*/
     left: 350px;
      
 }
 #fish5{
     position: absolute;
-    top: 500px;
+    top: 500px;/*500*/
     left: 1000px; 
 }
 #movie img{
