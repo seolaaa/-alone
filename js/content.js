@@ -58,12 +58,12 @@ window.addEventListener('load',()=>{
         if(scrollHeight>=900){
 
             console.log(1);
-            gsap.to(icon[0],{top:0,opacity:1,duration:0.7,ease:'back.out',delay:0.2})
-            gsap.to(icon[3],{top:0,opacity:1,duration:0.7,ease:'back.out',delay:0.3})
-            gsap.to(icon[5],{top:0,opacity:1,duration:0.7,ease:'back.out',delay:0.4})
-            gsap.to(icon[4],{bottom:0,opacity:1,duration:0.7,ease:'back.out',delay:0.6})
-            gsap.to(icon[2],{bottom:0,opacity:1,duration:0.7,ease:'back.out',delay:0.7})
-            gsap.to(icon[1],{bottom:0,opacity:1,duration:0.7,ease:'back.out',delay:0.8})
+            gsap.to(icon[0],{left:0,opacity:1,duration:0.7,ease:'power2.out',delay:0.2})
+            gsap.to(icon[3],{left:0,right:0,opacity:1,duration:0.7,ease:'power2.out',delay:0.3})
+            gsap.to(icon[5],{left:0,opacity:1,duration:0.7,ease:'power2.out',delay:0.4})
+            gsap.to(icon[4],{left:0,right:0,opacity:1,duration:0.7,ease:'power2.out',delay:0.6})
+            gsap.to(icon[2],{left:0,right:0,opacity:1,duration:0.7,ease:'power2.out',delay:0.7})
+            gsap.to(icon[1],{left:0,opacity:1,duration:0.7,ease:'power2.out',delay:0.8})
             
            
         }
