@@ -78,8 +78,8 @@ window.addEventListener('load',()=>{
             gsap.to(fish[0],{opacity:1,top:100,duration:1,ease:'power1.out',delay:0.2})
             gsap.to(fish[1],{opacity:1,top:350,duration:1,ease:'power1.out',delay:0.4})
             gsap.to(fish[2],{opacity:1,top:550,duration:1,ease:'power1.out',delay:0.6})
-            gsap.to(fish[3],{opacity:1,top:0,duration:1,ease:'power1.out',delay:0.8})
-            gsap.to(fish[4],{opacity:1,top:500,duration:1,ease:'power1.out',delay:0.8})
+            gsap.to(fish[3],{opacity:1,top:0,duration:1,ease:'power1.out',delay:1})
+            gsap.to(fish[4],{opacity:1,top:500,duration:1,ease:'power1.out',delay:1})
         }
 
 
@@ -125,12 +125,12 @@ window.addEventListener('load',()=>{
         )
     }
 
-      floatingCircle('.icon1',30,10)
-      floatingCircle('.icon2',30,10)
-      floatingCircle('.icon3',10,30)
-      floatingCircle('.icon4',10,30)
-      floatingCircle('.icon5',30,10)
-      floatingCircle('.icon6',10,30)
+    //   floatingCircle('.icon1',30,10)
+    //   floatingCircle('.icon2',30,10)
+    //   floatingCircle('.icon3',10,30)
+    //   floatingCircle('.icon4',10,30)
+    //   floatingCircle('.icon5',30,10)
+    //   floatingCircle('.icon6',10,30)
 
       floatingCircle('#fish1',1,30,10)
       floatingCircle('#fish2',5,20,30)
