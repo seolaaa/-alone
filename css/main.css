@@ -3,6 +3,7 @@
 body{
     background: #040c19
 }
+
 #visual-wrap{
     width: 100%;
     height:auto;
@@ -85,11 +86,17 @@ body{
     top: 60%;
     left: 16%;
     z-index: 2;
+    background: red;
+    
     
 }
 #visual-btn a{
     font: normal 20px/24px 'Noto Sans';
     color: #0485d7;
+}
+
+#visual-btn:hover{
+
 }
 
 #scroll-wrap{
