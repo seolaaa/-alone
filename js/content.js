@@ -11,7 +11,9 @@ window.addEventListener('load',()=>{
 
     const proList = document.querySelectorAll('#projects-list>li')
 
+    const fish = document.querySelectorAll('#fish-wrap>img')
 
+    console.log(fish.length)
 
 
     let n = 0;
@@ -30,6 +32,7 @@ window.addEventListener('load',()=>{
 
         window.addEventListener('scroll',scrollContent)
         window.addEventListener('scroll',scrollBall)
+        window.addEventListener('scroll',scrollFish)
         window.addEventListener('scroll',scrollPro)
         
 
@@ -67,11 +70,28 @@ window.addEventListener('load',()=>{
         
     }
 
-    function scrollPro(){
+    function scrollFish(){
 
         let scrollHeight = window.pageYOffset;
 
-        if(scrollHeight>=2400){
+        if(scrollHeight>=1500){
+            gsap.to(fish[0],{opacity:1,top:100,duration:1,ease:'power1.out',delay:0.2})
+            gsap.to(fish[1],{opacity:1,top:350,duration:1,ease:'power1.out',delay:0.4})
+            gsap.to(fish[2],{opacity:1,top:550,duration:1,ease:'power1.out',delay:0.6})
+            gsap.to(fish[3],{opacity:1,top:0,duration:1,ease:'power1.out',delay:0.8})
+            gsap.to(fish[4],{opacity:1,top:500,duration:1,ease:'power1.out',delay:0.8})
+        }
+
+
+    }
+
+    function scrollPro(){
+
+        
+
+        let scrollHeight = window.pageYOffset;
+
+        if(scrollHeight>=2300){
             gsap.to(blueText[1],{opacity:1,top:0,duration:0.3,ease:'power3.out',delay:1})
             gsap.to(bigText[1],{opacity:1,top:15,duration:0.3,ease:'power3.out',delay:1.3})
             gsap.to(line,{width:1000,duration:0.1,ease:'power4.out',delay:2,onComplete:()=>{

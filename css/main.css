@@ -336,33 +336,43 @@ body{
 }
 #fish1{
     position: absolute;
-    top: 100px; /*100*/
+    top: 500px; /*100*/
     left: 500px;
     transform: rotate(7deg);
+    opacity: 0;
+    transition: all 0.5 ease-out;
    
     
 }
 #fish2{
     position: absolute;
-    top: 350px; /*350*/
-    transform: rotate(-10deg);  
+    top: 750px; /*350*/
+    transform: rotate(-10deg);
+    opacity: 0;
+    transition: all 0.5 ease-out;
 }
 #fish3{
     position: absolute;
-    top: 550px;/*550*/
+    top: 950px;/*550*/
     left: 600px;
+    opacity: 0;
+    transition: all 0.5 ease-out;
      
 }
 #fish4{
     position: absolute;
-    top: 0px;/*0*/
+    top: 300px;/*0*/
     left: 350px;
+    opacity: 0;
+    transition: all 0.5 ease-out;
      
 }
 #fish5{
     position: absolute;
-    top: 500px;/*500*/
-    left: 1000px; 
+    top: 800px;/*500*/
+    left: 1000px;
+    opacity: 0;
+    transition: all 0.5 ease-out;
 }
 #movie img{
     width: 100%;
