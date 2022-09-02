@@ -132,6 +132,12 @@ window.addEventListener('load',()=>{
       floatingCircle('.icon5',30,10)
       floatingCircle('.icon6',10,30)
 
+      floatingCircle('#fish1',1,30,10)
+      floatingCircle('#fish2',5,20,30)
+      floatingCircle('#fish3',1,30,30)
+      floatingCircle('#fish4',2,10,30)
+      floatingCircle('#fish5',8,20,35)
+
 
    
    
