@@ -97,7 +97,7 @@ window.addEventListener('load',()=>{
             gsap.to(line,{width:1000,duration:0.1,ease:'power4.out',delay:2,onComplete:()=>{
                 if(scrollHeight>=2000){
                     for(let i=0; i<proList.length; i++){
-                        gsap.to(proList[i],{top:0,opacity:1,duration:0.3,ease:'power4.out',delay:i*0.2})
+                        gsap.to(proList[i],{top:0,opacity:1,duration:1,ease:'power4.out',delay:i*0.1})
                     }
                 }
             }})
