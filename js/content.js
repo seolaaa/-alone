@@ -91,7 +91,7 @@ window.addEventListener('load',()=>{
 
         let scrollHeight = window.pageYOffset;
 
-        if(scrollHeight>=2000){
+        if(scrollHeight>=2300){
             gsap.to(blueText[1],{opacity:1,top:0,duration:0.3,ease:'power3.out',delay:1})
             gsap.to(bigText[1],{opacity:1,top:15,duration:0.3,ease:'power3.out',delay:1.3})
             gsap.to(line,{width:1000,duration:0.1,ease:'power4.out',delay:2,onComplete:()=>{
@@ -125,12 +125,6 @@ window.addEventListener('load',()=>{
         )
     }
 
-    //   floatingCircle('.icon1',30,10)
-    //   floatingCircle('.icon2',30,10)
-    //   floatingCircle('.icon3',10,30)
-    //   floatingCircle('.icon4',10,30)
-    //   floatingCircle('.icon5',30,10)
-    //   floatingCircle('.icon6',10,30)
 
       floatingCircle('#fish1',1,30,10)
       floatingCircle('#fish2',5,20,30)

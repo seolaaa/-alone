@@ -504,6 +504,13 @@ body{
     #projects-list li:last-child{
         margin-right: 10px;
     }
+
+    #fish-wrap{
+        width: 40%;
+        scale:0.7;
+        right: 500px;
+        top: -200px;
+    }
   
    
 }
@@ -543,6 +550,11 @@ body{
     }
     .pro-date{
         font-size: 12px;
+    }
+    #fish-wrap{
+        width: 20%;
+        scale:0.5;
+        right: 500px;
     }
 
 }
